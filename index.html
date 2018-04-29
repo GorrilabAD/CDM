@@ -1,0 +1,470 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Coffe| Home</title>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<script src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+		<link href="css/theme-style.css" rel='stylesheet' type='text/css' />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+		</script>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+		<script>
+			$(function() {
+				var pull 		= $('#pull');
+					menu 		= $('nav ul');
+					menuHeight	= menu.height();
+				$(pull).on('click', function(e) {
+					e.preventDefault();
+					menu.slideToggle();
+				});
+				$(window).resize(function(){
+	        		var w = $(window).width();
+	        		if(w > 320 && menu.is(':hidden')) {
+	        			menu.removeAttr('style');
+	        		}
+	    		});
+			});
+		</script>
+</head>
+	<body>
+			<div id="home" class="header">
+				<div class="container">
+					<div class="logo">
+						<a href="#"><img src="images/logo1.png" title="logo" /></a>
+					</div>
+					 <nav class="top-nav">
+						<ul class="top-nav">
+							<li class="active"><a href="#home" class="scroll">Главная <span> </span></a></li>
+							<li class="page-scroll"><a href="#ser" class="scroll">Наши услуги <span> </span></a></li>
+							<li class="page-scroll"><a href="#about" class="scroll">О нас<span> </span></a></li>
+							<li class="page-scroll"><a href="#port" class="scroll">Фото<span> </span></a></li>
+							<li class="page-scroll"><a href="#team" class="scroll">Наша команда<span> </span></a></li>
+							<li class="contatct-active" class="page-scroll"><a href="#contact" class="scroll">Contact us </a></li>
+						</ul>
+						<a href="#" id="pull"><img src="images/nav-icon.png" title="menu" /></a>
+					</nav>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+			<script src="js/responsiveslides.min.js"></script>
+			 <script>
+			    $(function () {
+			      $("#slider4").responsiveSlides({
+			        auto: true,
+			        pager: true,
+			        nav: true,
+			        speed: 500,
+			        namespace: "callbacks",
+			        before: function () {
+			          $('.events').append("<li>before event fired.</li>");
+			        },
+			        after: function () {
+			          $('.events').append("<li>after event fired.</li>");
+			        }
+			      });
+
+			    });
+			  </script>
+			    <div  id="top" class="callbacks_container">
+			      <ul class="rslides" id="slider4">
+			        <li>
+			          <img src="images/slide.jpg" alt="">
+			          <div class="caption text-center">
+			          	<div class="slide-text-info">
+			          		<h1>Кофейня|<span>"ЦДМ"</span>|House</h1>
+			          		<div class="slide-text">
+			          			<p>Для близких и друзей. </p>
+			          		</div>
+			          	</div>
+			          </div>
+			        </li>
+			        <li>
+			          <img src="images/slide2.jpg" alt="">
+			          <div class="caption text-center">
+			          	<div class="slide-text-info">
+                    <h1>Кофейня|<span>"ЦДМ"</span>|House</h1>
+                    <p>Для отдыха, работы, творчества. </p>
+
+			          		<div class="slide-text">
+			          			<p></p>
+			          		</div>
+			          	</div>
+			          </div>
+			        </li>
+			        <li>
+			          <img src="images/slide3.jpg" alt="">
+			           <div class="caption text-center">
+			           	<div class="slide-text-info">
+                    <h1>Кофейня|<span>"ЦДМ"</span>|House</h1>
+
+			          		<div class="slide-text">
+                      <p>Для романтических встреч.</p>
+
+			          		</div>
+			          	</div>
+			          </div>
+			        </li>
+			      </ul>
+			    </div>
+			    <div class="clearfix"> </div>
+			<div id="ser" class="services">
+				<div class="container">
+					<div class="services-head text-center">
+						<h3>Наши услуги</h3>
+					</div>
+					<div class="services-grids">
+						<div class="col-md-4 services-grid">
+							<div class="col-md-3 services-grid-left">
+								<a><img class="sv-img" src="images/sv.png" alt=""></a>
+                <h3> Игры</h3>
+                <P>table/sonyps3</P>
+							</div>
+
+							<div class="clearfix"> </div>
+						</div>
+						<div class="col-md-4 services-grid">
+              <div class="col-md-3 services-grid-left">
+                <a><img class="sv-img" src="images/sv.png" alt=""></a>
+                <h3> Игры</h3>
+                <P>table/sonyps3</P>
+              </div>
+
+							<div class="clearfix"> </div>
+						</div>
+						<div class="col-md-4 services-grid">
+              <div class="col-md-3 services-grid-left">
+                <a><img class="sv-img" src="images/sv.png" alt=""></a>
+                <h3> Игры</h3>
+                <P>table/sonyps3</P>
+              </div>
+
+							<div class="clearfix"> </div>
+						</div>
+						<div class="col-md-4 services-grid">
+              <div class="col-md-3 services-grid-left">
+                <a><img class="sv-img" src="images/sv.png" alt=""></a>
+                <h3> Игры</h3>
+                <P>table/sonyps3</P>
+              </div>
+
+							<div class="clearfix"> </div>
+						</div>
+						<div class="col-md-4 services-grid">
+              <div class="col-md-3 services-grid-left">
+                <a><img class="sv-img" src="images/sv.png" alt=""></a>
+                <h3> Игры</h3>
+                <P>table/sonyps3</P>
+              </div>
+
+							<div class="clearfix"> </div>
+						</div>
+						<div class="col-md-4 services-grid">
+              <div class="col-md-3 services-grid-left">
+                <a><img class="sv-img" src="images/sv.png" alt=""></a>
+                <h3> Игры</h3>
+                <P>table/sonyps3</P>
+              </div>
+
+							<div class="clearfix"> </div>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+			</div>
+
+					<div id="about" class="about">
+						<div class="container">
+							<div class="about-head">
+								<h4>О нас</h4>
+								<h5>Наши идеи</h5>
+								<p>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...""There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."</p>
+                <h5>Преимущества</h5>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                <h5>Наша история</h5>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+
+							</div>
+
+									<div class="clearfix"> </div>
+								</div>
+							</div>
+						</div>
+
+		<div class="portfolio portfolio-box">
+         <div  class="portfolio-main">
+					<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+					<script type="text/javascript">
+						$(function () {
+							var filterList = {
+								init: function () {
+
+
+										onMixEnd: filterList.hoverEffect()
+									});
+
+								},
+								hoverEffect: function () {
+									$('#portfoliolist .portfolio').hover(
+										function () {
+											$(this).find('.label').stop().animate({bottom: 0}, 200, 'easeOutQuad');
+											$(this).find('img').stop().animate({top: -30}, 500, 'easeOutQuad');
+										},
+										function () {
+											$(this).find('.label').stop().animate({bottom: -40}, 200, 'easeInQuad');
+											$(this).find('img').stop().animate({top: 0}, 300, 'easeOutQuad');
+										}
+									);
+
+								}
+
+							};
+							filterList.init();
+						});
+					</script>
+					<ul id="filters" class="clearfix">
+						<li><span class="filter  active" data-filter="app">Photography</span> |</li>
+						<li><span class="filter" data-filter="card">video</span> </li>
+
+					</ul>
+					<div id="portfoliolist">
+					<div class="portfolio logo1 mix_all" data-cat="logo" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">
+							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
+						     <img class="p-img" src="images/p1.jpg" /><div class="b-wrapper">
+						     	<h2 class="b-animate b-from-left    b-delay03 ">
+						     		<div class="animate-head">
+						     			<div class="animate-head-left">
+						     				<h3>Duis nec congue</h3>
+						     			</div>
+						     			<div class="animate-head-right">
+						     				<span><i class="fa fa-search-plus"> </i></span>
+						     			</div>
+						     			<div class="clearfix"> </div>
+						     		</div>
+						     	</h2>
+						  	</div></a>
+		                </div>
+					</div>
+					<div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">
+							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
+						     <img class="p-img" src="images/p2.jpg" /><div class="b-wrapper">
+						     	<h2 class="b-animate b-from-left    b-delay03 ">
+						     		<div class="animate-head">
+						     			<div class="animate-head-left">
+						     				<h3>Duis nec congue</h3>
+						     			</div>
+						     			<div class="animate-head-right">
+						     				<span><i class="fa fa-search-plus"> </i></span>
+						     			</div>
+						     			<div class="clearfix"> </div>
+						     		</div>
+						     	</h2>
+						  	</div></a>
+		                </div>
+					</div>
+					<div class="portfolio web mix_all" data-cat="web" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">
+							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
+						     <img class="p-img" src="images/p3.jpg" /><div class="b-wrapper">
+						     	<h2 class="b-animate b-from-left    b-delay03 ">
+						     		<div class="animate-head">
+						     			<div class="animate-head-left">
+						     				<h3>Duis nec congue</h3>
+						     			</div>
+						     			<div class="animate-head-right">
+						     				<span><i class="fa fa-search-plus"> </i></span>
+						     			</div>
+						     			<div class="clearfix"> </div>
+						     		</div>
+						     	</h2>
+						  	</div></a>
+		                </div>
+					</div>
+					<div class="portfolio icon mix_all" data-cat="icon" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">
+							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
+						     <img class="p-img" src="images/p4.jpg" /><div class="b-wrapper">
+						     	<h2 class="b-animate b-from-left    b-delay03 ">
+						     		<div class="animate-head">
+						     			<div class="animate-head-left">
+						     				<h3>Duis nec congue</h3>
+						     			</div>
+						     			<div class="animate-head-right">
+						     				<span><i class="fa fa-search-plus"> </i></span>
+						     			</div>
+						     			<div class="clearfix"> </div>
+						     		</div>
+						     	</h2>
+						  	</div></a>
+		                </div>
+					</div>
+					<div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">
+							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
+						     <img class="p-img" src="images/p5.jpg" /><div class="b-wrapper">
+						     	<h2 class="b-animate b-from-left    b-delay03 ">
+						     		<div class="animate-head">
+						     			<div class="animate-head-left">
+						     				<h3>Duis nec congue</h3>
+						     			</div>
+						     			<div class="animate-head-right">
+						     				<span><i class="fa fa-search-plus"> </i></span>
+						     			</div>
+						     			<div class="clearfix"> </div>
+						     		</div>
+						     	</h2>
+						  	</div></a>
+		                </div>
+					</div>
+					<div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">
+							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
+						     <img class="p-img" src="images/p6.jpg" /><div class="b-wrapper">
+						     	<h2 class="b-animate b-from-left    b-delay03 ">
+						     		<div class="animate-head">
+						     			<div class="animate-head-left">
+						     				<h3>Duis nec congue</h3>
+						     			</div>
+						     			<div class="animate-head-right">
+						     				<span><i class="fa fa-search-plus"> </i></span>
+						     			</div>
+						     			<div class="clearfix"> </div>
+						     		</div>
+						     	</h2>
+						  	</div></a>
+		                </div>
+					</div>
+					<div class="portfolio icon mix_all" data-cat="icon" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">
+							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
+						     <img class="p-img" src="images/p7.jpg" /><div class="b-wrapper">
+						     	<h2 class="b-animate b-from-left    b-delay03 ">
+						     		<div class="animate-head">
+						     			<div class="animate-head-left">
+						     				<h3>Duis nec congue</h3>
+						     			</div>
+						     			<div class="animate-head-right">
+						     				<span><i class="fa fa-search-plus"> </i></span>
+						     			</div>
+						     			<div class="clearfix"> </div>
+						     		</div>
+						     	</h2>
+						  	</div></a>
+		                </div>
+					</div>
+					<div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">
+							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
+						     <img class="p-img" src="images/p8.jpg" /><div class="b-wrapper">
+						     	<h2 class="b-animate b-from-left    b-delay03 ">
+						     		<div class="animate-head">
+						     			<div class="animate-head-left">
+						     				<h3>Duis nec congue</h3>
+						     			</div>
+						     			<div class="animate-head-right">
+						     				<span><i class="fa fa-search-plus"> </i></span>
+						     			</div>
+						     			<div class="clearfix"> </div>
+						     		</div>
+						     	</h2>
+						  	</div></a>
+		                </div>
+					</div>
+					<div class="clearfix"> </div>
+					<a class="more-ports text-center" href="#"><span> </span></a>
+				</div>
+		</div>
+		</div>
+		<div class="clearfix"> </div>
+		</div>
+
+         <div id="team" class="team">
+         	<div class="container">
+         		<div class="team-head text-center">
+         			<h3>Наша команда</h3>
+         		</div>
+         		<div class="team-members-grids text-center">
+         			<div class="col-md-4 team-member-grid">
+         				<img src="images/team-member-pic3.jpg" title="name" />
+         				<h5><a href="#">Бариста </a></h5>
+         				<ul class="list-unstyled list-inline">
+         					<li><a href="#"><i class="fa fa-facebook"> </i></a></li>
+         					<li><a href="#"><i class="fa fa-twitter"> </i></a></li>
+         					<li><a href="#"><i class="fa fa-skype"> </i></a></li>
+         				</ul>
+         			</div>
+         			<div class="col-md-4 team-member-grid">
+         				<img src="images/team-member-pic2.jpg" title="name" />
+         				<h5><a href="#">Бариста</a></h5>
+         				<ul class="list-unstyled list-inline">
+         					<li><a href="#"><i class="fa fa-facebook"> </i></a></li>
+         					<li><a href="#"><i class="fa fa-twitter"> </i></a></li>
+         					<li><a href="#"><i class="fa fa-skype"> </i></a></li>
+         				</ul>
+         			</div>
+
+         			<div class="clearfix"> </div>
+         		</div>
+         	</div>
+         </div>
+
+         <div id="contact" class="contact">
+         	<div class="container">
+         		<div class="contact-head text-center">
+         			<h3>Наши контакты</h3>
+         		</div>
+         		<div class="contact-grids">
+         			<div class="col-md-7 contact-left">
+         				<h4>Напишите нам</h4>
+         						<form>
+									<input type="text" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}">
+									<input type="text" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}">
+									<input type="text" value="Phone" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Phone';}">
+									<textarea onfocus="if(this.value == 'Message ') this.value='';" onblur="if(this.value == '') this.value='Message *;">Message </textarea>
+									<input type="submit" value="Отправить" />
+								</form>
+         			</div>
+         			<div class="col-md-5 contact-right">
+         				<h4>Инфо</h4><br />
+         				<p><span class="icon1"> </span><a href="#">wrestbild57@gmail.com</a></p><br />
+         				<p><span class="icon2"> </span>+7(910) 748-10-47</p><br />
+         				<p><span class="icon3"> </span><label>Октябрьская 25</label></p><br />
+         				<h4>Мы в социальных сетях</h4><br />
+         				<ul class="list-unstyled list-inline">
+									
+								</ul>
+         			</div>
+         			<div class="clearfix"> </div>
+         		</div>
+         	</div>
+         </div>
+         <div class="footer">
+         	<div class="container">
+         		<div class="footer-right">
+         			<script type="text/javascript">
+						$(document).ready(function() {
+
+							$().UItoTop({ easingType: 'easeOutQuart' });
+
+						});
+					</script>
+				<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+         		</div>
+         		<div class="clearfix"> </div>
+         	</div>
+         </div>
+	</body>
+</html>
